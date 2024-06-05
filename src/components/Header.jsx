@@ -23,12 +23,12 @@ const Header = () => {
   }, []);
 
   const Container = styled.div`
-    height: 100px;
+    max-height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 150px;
+    padding: 0px 150px;
     background: ${scrolled ? "rgba(217, 217, 217, 0.5)" : "white"};
     position: fixed;
     top: 0px;
@@ -79,15 +79,46 @@ const Header = () => {
       }
     }
 
-    button {
-      height: 60px;
-      width: 180px;
-      border-radius: 77px;
-      font-size: 24px;
+    button{
+      height:60px;
+      color:white;
+      background-color: #9747FF;
+      font-size:22px;
       border: none;
-      background-color: #9747ff;
-      color: white;
-    }
+      border-radius:45px;
+  position: relative;
+  width: 160px; 
+
+  overflow: hidden;
+  
+
+  span {
+    z-index: 2;
+  }
+
+  &:after {
+    background: #fff;
+    content: "";
+    height: 130px;
+    left: -75px;
+    width:30px;
+    opacity: 0.3;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 22;
+  }
+
+  &:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+    
+}
+
   `;
 
   return (
@@ -126,6 +157,7 @@ const Header = () => {
       </div>
       <div>
         <button>Sign-Up</button>
+
       </div>
     </Container>
   );

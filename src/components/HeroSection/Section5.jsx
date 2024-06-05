@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Cards from "./Section5Cards";
+// import Cards from "./Section5Cards";
+
 const Section5 = () => {
+
+ 
   return (
     <Container>
-      <div className="box1">
+      
         <button
           style={{
             height: "50px",
@@ -19,13 +22,9 @@ const Section5 = () => {
         >
           Feedback
         </button>
-      </div>
+     
 
-      <div className="box2">
-        <Cards />
-        <Cards />
-        <Cards />
-      </div>
+    
     </Container>
   );
 };
@@ -33,27 +32,15 @@ const Section5 = () => {
 export default Section5;
 
 const Container = styled.div`
-  height: 800px;
+  height: 100px;
   width: 100%;
-  display: flex;
+  text-align:center;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: #E9EDF0;
+  background-color: #E9EDF0; */
 
-  .box1 {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .box2 {
-    height: 600px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
+
+  
 `;

@@ -25,6 +25,7 @@ const Section1 = () => {
           color: "white",
           backgroundColor: "#9747FF",
           border: "none",
+          position:"relative"
         }}
       >
         Get Started <FontAwesomeIcon icon={faArrowRightLong} />
@@ -54,5 +55,36 @@ const Container = styled.div`
   }
   p {
     font-size: 40px;
+  }
+
+
+  button{
+
+    
+  overflow: hidden;
+    
+  span {
+    z-index: 0;
+  }
+
+  &:after {
+    background: #fff;
+    content: "";
+    height: 160px;
+    left: -75px;
+    width:30px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 0;
+  }
+
+  &:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
   }
 `;
