@@ -43,7 +43,7 @@ const Header = () => {
 
       h1 {
         font-size: 30px;
-        font-weight:500;
+        font-weight: 500;
       }
 
       img {
@@ -79,46 +79,42 @@ const Header = () => {
       }
     }
 
-    button{
-      height:60px;
-      color:white;
-      background-color: #9747FF;
-      font-size:22px;
+    button {
+      height: 60px;
+      color: white;
+      background-color: #9747ff;
+      font-size: 22px;
       border: none;
-      border-radius:45px;
-  position: relative;
-  width: 160px; 
+      border-radius: 45px;
+      position: relative;
+      width: 160px;
 
-  overflow: hidden;
-  
+      overflow: hidden;
 
-  span {
-    z-index: 2;
-  }
+      span {
+        z-index: 2;
+      }
 
-  &:after {
-    background: #fff;
-    content: "";
-    height: 130px;
-    left: -75px;
-    width:30px;
-    opacity: 0.3;
-    position: absolute;
-    top: -50px;
-    transform: rotate(35deg);
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-    width: 50px;
-    z-index: 22;
-  }
+      &:after {
+        background: #fff;
+        content: "";
+        height: 130px;
+        left: -75px;
+        width: 30px;
+        opacity: 0.3;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: 22;
+      }
 
-  &:hover:after {
-    left: 120%;
-    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-
-    
-}
-
+      &:hover:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      }
+    }
   `;
 
   return (
@@ -157,7 +153,6 @@ const Header = () => {
       </div>
       <div>
         <button>Sign-Up</button>
-
       </div>
     </Container>
   );

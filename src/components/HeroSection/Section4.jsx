@@ -12,7 +12,7 @@ const Section4 = () => {
             backgroundColor: "#F1EBFF",
             color: "#4F87FF",
             borderRadius: "45px",
-            fontSize:"22px"
+            fontSize: "22px",
           }}
         >
           The New Reality
@@ -47,7 +47,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 0px 150px 0px 150px;
-  background-color: #E9EDF0;
+  background-color: #e9edf0;
 
   .box1 {
     height: 60px;

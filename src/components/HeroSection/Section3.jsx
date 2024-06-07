@@ -13,7 +13,7 @@ const Section3 = () => {
             backgroundColor: "#F1EBFF",
             color: "#4F87FF",
             borderRadius: "45px",
-            fontSize:"22px"
+            fontSize: "22px",
           }}
         >
           Features
@@ -113,7 +113,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #E9EDF0;
+  background-color: #e9edf0;
 
   .box1 {
     height: 60px;
